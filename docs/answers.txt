@@ -1,0 +1,60 @@
+** I went through the tutorials on 10/15/2021
+** I created my github account approximately 2 months ago.
+
+5.
+    1. Paste the console output you saved at the end of step 3.C (2 points)
+       I did not have the correct output in this terminal because I had both CLion
+       and the Git Bash open. Although I had previously connected CLion and Github,
+       and even pushed the updates for the README.md file via CLion, it would not
+       authenticate. I closed the bash session, repushed the updates, but the text
+       that I believe you are looking for did not display.
+
+    2. How many commits have been done to the repository (not only by you, but by anyone) so far?
+        10 commits; 6 by Esteban Parra, and 4 by me.
+      Write the git command you used to get this information (4 points)
+        git shortlog -s
+
+    3. When was the README.md  file modified last?
+        Author: MimiChi-1 <mimi_hester@yahoo.com>
+        Date:   Fri Oct 15 20:20:54 2021 -0500
+       Write the git command you used to get this information (4 points)
+        git log README.md
+
+    4. Mention two reasons why branches are used in a Git repository (4 points)
+        The git branch command lets you create, list, rename, and delete branches.
+        Branches allow you to isolate development work without affecting other
+        branches in the repository.
+
+    5. What is the difference between git log and git status? (4 points)
+        git log: Gets info about last commits
+        git status: Shows the working tree status
+
+    6. What command would you use to see the commits where “Vehicle.h” was one of the committed
+       files? (4 points)
+
+    7. What command would you use to see the commits whose commit message contains the word “file”? (4 points)
+        git log --grep=“term“
+
+    8. In the context of object-oriented programming
+        (I) What is inheritance?
+            new data types can be defined as extensions of previously defi ned types, rather
+            than having to be defined from scratch
+        (II) What is polymorphism?
+            Polymorphism si the method that performs different things per the object's class, which calls it.
+        (III) What is encapsulation? (6 points)
+            Encapsulation is the bundling of data, along with the methods that operate on that data,
+            into a single unit. As the textbook states: Everything in the product that relates to the
+            portion of the real world modeled by that object can be found in the object itself.
+
+    9. What is the main difference between the “Dictator and Lieutenants” workflow and the “Integration manager”
+       workflow? (5 points)
+        Only the dictator repository can push to the central/blessed repository. The dictator repository merges
+        changes in the lieutenant repositories and solves any arising conflicts.
+        Lieutenant repositories merge changes for some developers and solves conflicts. A developer
+        pushes changes to the assigned lieutenant repository.
+
+        Integration manager: Conflict resolutions are done by the integration manager.
+
+    10.How would a team of 100 developers benefit from following the “Dictator and Lieutenants”
+       workflow instead of the “Centralized” workflow? (5 points)
+        Since only the dictator can push to the central repository, there would be less conflicts.
